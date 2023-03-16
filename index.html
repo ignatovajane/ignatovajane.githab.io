@@ -1,87 +1,134 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Jane Product Designer</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #F3F1EF;
-      font-family: "Uniform Rounded", sans-serif;
-    }
+  <head>
+    <title>My Landing Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f3f1ef;
+      }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 70px;
-      box-sizing: border-box;
-    }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 70px;
+        background-color: #fff;
+        border: 70px solid #f3f1ef;
+        box-sizing: border-box;
+      }
 
-    .left {
-      width: 70%;
-      margin-top: 120px;
-    }
+      .left-block {
+        width: 70%;
+      }
 
-    .right {
-      width: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 70px solid #F3F1EF;
-      box-sizing: border-box;
-    }
+      .left-block h1 {
+        font-size: 65pt;
+        font-family: "Uniform Rounded", sans-serif;
+        color: #171413;
+        margin: 0;
+      }
 
-    h1 {
-      font-size: 65pt;
-      color: #171413;
-      margin: 0;
-    }
+      .left-block h2 {
+        font-size: 26pt;
+        font-family: "Uniform Rounded", sans-serif;
+        color: #171413;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
 
-    h2 {
-      font-size: 26pt;
-      color: #171413;
-      margin-top: 30px;
-    }
+      .left-block ul.bullet-list {
+        list-style-type: none;
+        margin-top: 30px;
+        margin-left: 0;
+        padding-left: 0;
+      }
 
-    .bullet-list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      margin-top: 30px;
-    }
+      .left-block li {
+        font-size: 16pt;
+        font-family: "Uniform Rounded", sans-serif;
+        margin-bottom: 16px;
+        color: #171413;
+      }
 
-    .bullet-list li:before {
-      content: "\2022";
-      color: #171413;
-      font-size: 8pt;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
+      .right-block {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .made-by-ai {
-      font-size: 12pt;
-      color: #171413;
-      margin-top: 80px;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="left">
-      <h1>Hi! I'm Jane Product Designer!</h1>
-      <h2>I’m a product designer, experience strategist, generative artist & human-loving introvert</h2>
-      <ul class="bullet-list">
-        <li>Product must be authentic</li>
-        <li>Solve pain points elegantly</li>
-        <li>User testing, feedback, and validation</li>
-      </ul>
-    </div>
-    <div class="right">
-      <img src="https://via.placeholder.com/150" alt="Kitten" />
-    </div>
-  </div>
-  <div class="made-by-ai">Made by artificial intelligence</div>
-</body>
-</html>
+      .right-block .photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #f45c42;
+      }
+
+      .made-by {
+        font-size: 12pt;
+        font-family: "Uniform Rounded", sans-serif;
+        color: #171413;
+        margin-top: 80px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+          padding: 16px;
+        }
+
+        .left-block,
+        .right-block {
+          width: 100%;
+        }
+
+        .left-block {
+          margin-bottom: 30px;
+        }
+
+        .left-block h1 {
+          font-size: 32pt;
+          text-align: center;
+        }
+
+        .left-block h2 {
+          font-size: 20pt;
+          text-align: center;
+        }
+
+        .left-block ul.bullet-list {
+          margin-top: 20px;
+          margin-left: 16px;
+          padding-left: 16px;
+        }
+
+        .left-block li {
+          font-size: 14pt;
+          margin-bottom: 12px;
+        }
+
+        .made-by {
+          margin-top: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-block">
+        <h1>Hi! I'm Jane Product designer!</h1>
+        <h2>I’m a product designer, experience strategist, generative artist & human-loving introvert</h2>
+        <ul class="bullet-list">
+          <li>Product must be authentic</li>
+          <li>Solve pain points elegantly</li>
+          <li>User testing, feedback, and validation</li>
+        </ul>
+      </div>
+     
+
