@@ -1,90 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>About Me</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Uniform Rounded', sans-serif;
-      }
-      .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #F3F1EF;
-        padding: 70px;
-        border: 70px solid #F3F1EF;
-      }
-      .left-block {
-        width: 70%;
-        margin-top: 120px;
-      }
-      h1 {
-        font-size: 65pt;
-        color: #171413;
-        text-align: left;
-      }
-      h2 {
-        font-size: 26pt;
-        color: #171413;
-        text-align: left;
-        margin-top: 30px;
-      }
-      ul.bullet-list {
-        margin-top: 30px;
-        margin-left: 0;
-        padding-left: 20px;
-        list-style-type: none;
-      }
-      ul.bullet-list li {
-        margin-bottom: 5px;
-        font-size: 18pt;
-        color: #171413;
-        position: relative;
-        padding-left: 30px;
-      }
-      ul.bullet-list li:before {
-        content: "●";
-        font-size: 8pt;
-        color: #171413;
-        position: absolute;
-        left: 0;
-        top: 3px;
-      }
-      .right-block {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #F3F1EF;
-      }
-      .ai {
-        font-size: 14pt;
-        color: #171413;
-        text-align: center;
-        margin-top: 50px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-block">
-        <h1>Hi! I'm Jane Product designer!</h1>
-        <h2>I’m a product designer, experience strategist, generative artist & human-loving introvert</h2>
-        <ul class="bullet-list">
-          <li>Product must be authentic</li>
-          <li>Solve pain points elegantly</li>
-          <li>User testing, feedback, and validation</li>
-        </ul>
-      </div>
-      <div class="right-block">
-        <img src="https://via.placeholder.com/300x300" alt="Cat Image">
-      </div>
+<head>
+  <title>Jane Product Designer</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #F3F1EF;
+      font-family: "Uniform Rounded", sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 70px;
+      box-sizing: border-box;
+    }
+
+    .left {
+      width: 70%;
+      margin-top: 120px;
+    }
+
+    .right {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 70px solid #F3F1EF;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 65pt;
+      color: #171413;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 26pt;
+      color: #171413;
+      margin-top: 30px;
+    }
+
+    .bullet-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .bullet-list li:before {
+      content: "\2022";
+      color: #171413;
+      font-size: 8pt;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .made-by-ai {
+      font-size: 12pt;
+      color: #171413;
+      margin-top: 80px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Hi! I'm Jane Product Designer!</h1>
+      <h2>I’m a product designer, experience strategist, generative artist & human-loving introvert</h2>
+      <ul class="bullet-list">
+        <li>Product must be authentic</li>
+        <li>Solve pain points elegantly</li>
+        <li>User testing, feedback, and validation</li>
+      </ul>
     </div>
-    <div class="ai">
-      Made by artificial intelligence
+    <div class="right">
+      <img src="https://via.placeholder.com/150" alt="Kitten" />
     </div>
-  </body>
+  </div>
+  <div class="made-by-ai">Made by artificial intelligence</div>
+</body>
 </html>
