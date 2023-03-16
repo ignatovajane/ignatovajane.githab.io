@@ -1,139 +1,126 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Landing Page</title>
+    <meta charset="utf-8">
+    <title>Jane - Product Designer</title>
     <style>
       body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f3f1ef;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #171413;
+        background-color: #F3F1EF;
       }
-
+      
       .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 70px;
-        background-color: #fff;
-        border: 70px solid #f3f1ef;
-        box-sizing: border-box;
+        padding: 70px 40px;
+        border-radius: 70px;
+        border: 70px solid #F3F1EF;
       }
-
+      
       .left-block {
         width: 70%;
+        margin-top: 120px;
       }
-
-      .left-block h1 {
+      
+      h1 {
         font-size: 65pt;
-        font-family: "Uniform Rounded", sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
         color: #171413;
-        margin: 0;
+        font-family: "Uniform Rounded";
       }
-
-      .left-block h2 {
+      
+      h2 {
         font-size: 26pt;
-        font-family: "Uniform Rounded", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
         color: #171413;
-        margin-top: 30px;
+        font-family: "Uniform Rounded";
+        margin-top: 32px;
         margin-bottom: 0;
       }
-
-      .left-block ul.bullet-list {
-        list-style-type: none;
-        margin-top: 30px;
+      
+      .bullet-list {
+        margin-top: 32px;
         margin-left: 0;
         padding-left: 0;
+        list-style: none;
       }
-
-      .left-block li {
+      
+      .bullet-list li {
         font-size: 16pt;
-        font-family: "Uniform Rounded", sans-serif;
-        margin-bottom: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
         color: #171413;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 16px;
+        padding-left: 24px;
+        position: relative;
       }
-
+      
+      .bullet-list li:before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #171413;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 7px;
+      }
+      
       .right-block {
         width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
       }
-
-      .right-block .photo {
+      
+      .avatar {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-color: #f45c42;
+        background-color: orange;
+        margin-top: 80px;
       }
-
+      
       .made-by {
         font-size: 12pt;
-        font-family: "Uniform Rounded", sans-serif;
-        color: #171413;
-        margin-top: 80px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
         text-align: center;
+        color: #171413;
+        font-family: "Uniform Rounded";
+        margin-top: 80px;
       }
-
-      @media screen and (max-width: 600px) {
+      
+      @media (max-width: 600px) {
         .container {
           flex-direction: column;
-          padding: 16px;
-        }
-
-        .left-block,
-        .right-block {
-          width: 100%;
-        }
-
-        .left-block {
-          margin-bottom: 30px;
-        }
-
-        .left-block h1 {
-          font-size: 32pt;
-          text-align: center;
-        }
-
-        .left-block h2 {
-          font-size: 20pt;
-          text-align: center;
-        }
-
-        .left-block ul.bullet-list {
-          margin-top: 20px;
-          margin-left: 16px;
-          padding-left: 16px;
-        }
-
-        .left-block li {
-          font-size: 14pt;
-          margin-bottom: 12px;
+          padding: 40px 16px;
+          border-radius: 0;
+          border-width: 0;
         }
         
-        .li {
-          padding: 16px;
-          background: #dddddd;
-        }
-
-        .made-by {
-          margin-top: 40px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="left-block">
-        <h1>Hi! I'm Jane Product designer!</h1>
-        <h2>I’m a product designer, experience strategist, generative artist & human-loving introvert</h2>
-        <ul class="bullet-list">
-          <li>Product must be authentic</li>
-          <li>Solve pain points elegantly</li>
-          <li>User testing, feedback, and validation</li>
-        </ul>
-      </div>
-     
-
+        .left-block {
+          width: 100%;
+          margin-top
